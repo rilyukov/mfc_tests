@@ -10,17 +10,16 @@ public class BasePage {
 
     Header header = new Header();
 
-    public void openPage(String url){
+    private void openPage(String url) {
         open(url);
     }
 
-    public void openHomePage(){
+    void openHomePage() {
         openPage("/");
     }
 
-    public void checkPageTitle(String title) {
+    void checkPageTitle(String title) {
         Assertions.assertThat(pageTitle.getText()).isEqualToIgnoringCase(title)
                 .as("Page title matches");
     }
-
 }

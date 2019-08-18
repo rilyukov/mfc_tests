@@ -3,6 +3,7 @@ import com.codeborne.selenide.Configuration;
 import static org.openqa.selenium.remote.BrowserType.CHROME;
 
 public class TestData {
+
     public static String BASE_URL = "https://xn--d1apb.xn--d1achjhdicc8bh4h.xn--p1ai/";
 
     public static void initSelenide() {
@@ -20,5 +21,4 @@ public class TestData {
             Configuration.timeout = 6000;
         }
     }
-
 }

@@ -1,4 +1,3 @@
-import com.codeborne.selenide.Selenide;
 import org.testng.annotations.Test;
 
 @Test
@@ -8,7 +7,7 @@ public class SmokeTest extends TestBase {
         HomePage homePage = new HomePage();
         homePage.openHomePage();
         homePage.checkTitle();
-        homePage.header.clickOnperfromanceMonitoring();
+        homePage.header.clickOnPerformanceMonitoring();
         PerfromnaceMonitoring perfromnaceMonitoring = new PerfromnaceMonitoring();
         perfromnaceMonitoring.checkTitle();
         perfromnaceMonitoring.waitPageLoaded();

@@ -11,7 +11,7 @@ public class Header {
         news.click();
     }
 
-    public void clickOnperfromanceMonitoring() {
+    void clickOnPerformanceMonitoring() {
         performanceMonitoring.click();
     }
 }
