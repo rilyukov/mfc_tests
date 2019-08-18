@@ -6,7 +6,7 @@ import org.assertj.core.api.Assertions;
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class PerfromnaceMonitoring extends BasePage {
+public class PerformanceMonitoring extends BasePage {
     private static final Integer TIMEOUT = 10000;
 
     private static final String PAGE_TITLE       = "Мониторинг показателей работы МФЦ";

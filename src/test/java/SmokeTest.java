@@ -8,11 +8,11 @@ public class SmokeTest extends TestBase {
         homePage.openHomePage();
         homePage.checkTitle();
         homePage.header.clickOnPerformanceMonitoring();
-        PerfromnaceMonitoring perfromnaceMonitoring = new PerfromnaceMonitoring();
-        perfromnaceMonitoring.checkTitle();
-        perfromnaceMonitoring.waitPageLoaded();
+        PerformanceMonitoring performanceMonitoring = new PerformanceMonitoring();
+        performanceMonitoring.checkTitle();
+        performanceMonitoring.waitPageLoaded();
 
-        perfromnaceMonitoring.setRegionSelect("Субъекты РФ");
-        perfromnaceMonitoring.validateRegionInTheTeble("Все МФЦ/ТОСП");
+        performanceMonitoring.setRegionSelect("Субъекты РФ");
+        performanceMonitoring.validateRegionInTheTeble("Все МФЦ/ТОСП");
     }
 }
