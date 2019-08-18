@@ -33,7 +33,7 @@ public class PerfromnaceMonitoring extends BasePage {
     }
 
     void setRegionSelect(String title) {
-        regionSelect.click();
+        regionSelect.click();//method select menu option doesn't work, it changes value on UI, but UI doesn't recognise it
         $x(String.format(REGION_MENU_ITEM, title)).click();
         clickApplyButton();
         waitTableLoaded();
